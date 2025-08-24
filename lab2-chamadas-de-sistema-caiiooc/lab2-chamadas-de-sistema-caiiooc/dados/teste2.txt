@@ -1,0 +1,25 @@
+Linha 1 - Arquivo de teste para o exercício 2
+Linha 2 - Este arquivo tem mais linhas para testar o contador
+Linha 3 - Cada linha ajuda a verificar se o programa funciona
+Linha 4 - O buffer pequeno vai forçar múltiplas leituras
+Linha 5 - Isso demonstra como syscalls funcionam na prática
+Linha 6 - O strace mostrará cada chamada read() individualmente
+Linha 7 - Conte quantas syscalls foram necessárias
+Linha 8 - Compare com o tamanho do buffer usado
+Linha 9 - Buffer menor = mais syscalls = mais overhead
+Linha 10 - Buffer maior = menos syscalls = melhor performance
+Linha 11 - Mas buffer muito grande desperdiça memória
+Linha 12 - O equilíbrio é importante em sistemas reais
+Linha 13 - Este arquivo tem exatamente 25 linhas
+Linha 14 - Para facilitar a verificação manual
+Linha 15 - Se seu programa contar 25, está correto!
+Linha 16 - Caso contrário, há algum bug no código
+Linha 17 - Verifique os TODOs novamente
+Linha 18 - Especialmente o loop de leitura
+Linha 19 - E a contagem de caracteres \n
+Linha 20 - Lembre-se: read() pode retornar menos bytes
+Linha 21 - Que o tamanho do buffer solicitado
+Linha 22 - Por isso o loop é necessário
+Linha 23 - Para ler arquivos grandes completamente
+Linha 24 - Esta é a penúltima linha
+Linha 25 - Esta é a última linha (total: 25 linhas)

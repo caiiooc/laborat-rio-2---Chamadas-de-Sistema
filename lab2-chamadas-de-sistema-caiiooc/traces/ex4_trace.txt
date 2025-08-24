@@ -1,0 +1,95 @@
+execve("./ex4_copia", ["./ex4_copia"], 0x7fffc957d220 /* 20 vars */) = 0
+brk(NULL)                               = 0x7fffe6363000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb44f5f0000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=19079, ...}) = 0
+mmap(NULL, 19079, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb44f5f3000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb44f390000
+mmap(0x7fb44f3b8000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fb44f3b8000
+mmap(0x7fb44f540000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7fb44f540000
+mmap(0x7fb44f58f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7fb44f58f000
+mmap(0x7fb44f595000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb44f595000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb44f380000
+arch_prctl(ARCH_SET_FS, 0x7fb44f380740) = 0
+set_tid_address(0x7fb44f380a10)         = 126
+set_robust_list(0x7fb44f380a20, 24)     = 0
+rseq(0x7fb44f381060, 0x20, 0, 0x53053053) = -1 ENOSYS (Function not implemented)
+mprotect(0x7fb44f58f000, 16384, PROT_READ) = 0
+mprotect(0x7fb44f5fb000, 4096, PROT_READ) = 0
+mprotect(0x7fb44f5e6000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=8192*1024}) = 0
+munmap(0x7fb44f5f3000, 19079)           = 0
+clock_gettime(CLOCK_PROCESS_CPUTIME_ID, {tv_sec=0, tv_nsec=15625000}) = 0
+fstat(1, {st_mode=S_IFCHR|0640, st_rdev=makedev(0x4, 0x1), ...}) = 0
+ioctl(1, TCGETS, {c_iflag=BRKINT|ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD|HUPCL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+getrandom("\xcf\x08\x5c\xbe\x04\xfc\xe7\x63", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x7fffe6363000
+brk(0x7fffe6384000)                     = 0x7fffe6384000
+write(1, "=== Exerc\303\255cio 4: C\303\263pia de Arqu"..., 40) = 40
+write(1, "Copiando: dados/origem.txt -> da"..., 49) = 49
+openat(AT_FDCWD, "dados/origem.txt", O_RDONLY) = 3
+openat(AT_FDCWD, "dados/destino.txt", O_WRONLY|O_CREAT|O_TRUNC, 0644) = 4
+read(3, "Este \303\251 o arquivo de origem para"..., 64) = 64
+write(4, "Este \303\251 o arquivo de origem para"..., 64) = 64
+read(3, "copiar este arquivo completament"..., 64) = 64
+write(4, "copiar este arquivo completament"..., 64) = 64
+read(3, "se fun\303\247\303\265es como fread/fwrite -"..., 64) = 64
+write(4, "se fun\303\247\303\265es como fread/fwrite -"..., 64) = 64
+read(3, ".\n\nEste arquivo \303\251 um pouco maio"..., 64) = 64
+write(4, ".\n\nEste arquivo \303\251 um pouco maio"..., 64) = 64
+read(3, "rar\ncomo o programa se comporta "..., 64) = 64
+write(4, "rar\ncomo o programa se comporta "..., 64) = 64
+read(3, "O.\n\nCada par\303\241grafo representa u"..., 64) = 64
+write(4, "O.\n\nCada par\303\241grafo representa u"..., 64) = 64
+read(3, "e escrito pelo seu programa de c"..., 64) = 64
+write(4, "e escrito pelo seu programa de c"..., 64) = 64
+read(3, "nido no c\303\263digo determinar\303\241 qua"..., 64) = 64
+write(4, "nido no c\303\263digo determinar\303\241 qua"..., 64) = 64
+read(3, "er\303\243o necess\303\241rias.\n\nObserve no "..., 64) = 64
+write(4, "er\303\243o necess\303\241rias.\n\nObserve no "..., 64) = 64
+read(3, " read() l\303\252 dados do arquivo ori"..., 64) = 64
+write(4, " read() l\303\252 dados do arquivo ori"..., 64) = 64
+read(3, "dados no arquivo destino\n\nEste p"..., 64) = 64
+write(4, "dados no arquivo destino\n\nEste p"..., 64) = 64
+read(3, " em sistemas operacionais\ne \303\251 u"..., 64) = 64
+write(4, " em sistemas operacionais\ne \303\251 u"..., 64) = 64
+read(3, ", rsync, backup, etc.\n\nQuando te"..., 64) = 64
+write(4, ", rsync, backup, etc.\n\nQuando te"..., 64) = 64
+read(3, "xt dados/destino.txt'\npara verif"..., 64) = 64
+write(4, "xt dados/destino.txt'\npara verif"..., 64) = 64
+read(3, "e n\303\243o houver sa\303\255da,\nsignifica "..., 64) = 64
+write(4, "e n\303\243o houver sa\303\255da,\nsignifica "..., 64) = 64
+read(3, "\n\nAlgumas considera\303\247\303\265es import"..., 64) = 64
+write(4, "\n\nAlgumas considera\303\247\303\265es import"..., 64) = 64
+read(3, "rno das syscalls\n- Feche file de"..., 64) = 64
+write(4, "rno das syscalls\n- Feche file de"..., 64) = 64
+read(3, "- Buffer maior = menos syscalls "..., 64) = 64
+write(4, "- Buffer maior = menos syscalls "..., 64) = 64
+read(3, "e de balancear performance vs us"..., 64) = 64
+write(4, "e de balancear performance vs us"..., 64) = 64
+read(3, "onsomem mais mem\303\263ria.\n\nFinal do"..., 64) = 64
+write(4, "onsomem mais mem\303\263ria.\n\nFinal do"..., 64) = 64
+write(1, "Progresso: 1280 bytes...\n", 25) = 25
+read(3, "mado: 1200 bytes.\nCom buffer de "..., 64) = 64
+write(4, "mado: 1200 bytes.\nCom buffer de "..., 64) = 64
+read(3, "ra\303\247\303\265es read/write.", 64) = 20
+write(4, "ra\303\247\303\265es read/write.", 20) = 20
+read(3, "", 64)                         = 0
+close(3)                                = 0
+close(4)                                = 0
+clock_gettime(CLOCK_PROCESS_CPUTIME_ID, {tv_sec=0, tv_nsec=15625000}) = 0
+write(1, "\n=== Estat\303\255sticas ===\n", 23) = 23
+write(1, "Bytes copiados: 1364\n", 21)  = 21
+write(1, "Opera\303\247\303\265es: 22\n", 16) = 16
+write(1, "Tempo: 0.000000 segundos\n", 25) = 25
+write(1, "\nVerifica\303\247\303\243o: diff dados/orige"..., 56) = 56
+exit_group(0)                           = ?
++++ exited with 0 +++

@@ -1,0 +1,4 @@
+Esta e a primeira linha do arquivo de teste.
+Segunda linha pro exercicio 1.
+Terceira linha do arquivo.
+Ultima linha do arquivo.

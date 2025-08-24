@@ -1,0 +1,8 @@
+write(1, "=== Demonstra\303\247\303\243o: write() ===\n"..., 33) = 33
+write(1, "Primeira mensagem via write\n", 28) = 28
+write(1, "Segunda mensagem via write\n", 27) = 27
+write(1, "Terceira mensagem via write\n", 28) = 28
+write(1, "\n=== An\303\241lise ===\n", 18) = 18
+write(1, "Execute: strace -e write ./ex1b_"..., 38) = 38
+write(1, "Observe: Cada write() gera uma s"..., 39) = 39
++++ exited with 0 +++
