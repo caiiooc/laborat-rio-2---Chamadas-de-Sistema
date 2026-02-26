@@ -40,14 +40,15 @@ int main() {
      * TODO 1: Implementar loop de leitura
      * Loop até read() retornar 0 (fim do arquivo)
      */
-    while ((bytes_lidos = read(fd, buffer, BUFFER_SIZE)) > 0) {
+    while (bytes_lidos = read(fd, buffer, BUFFER_SIZE - 1) > 0) {
         total_reads++;
         
         /*
          * TODO 2: Contar caracteres '\n' no buffer
          */
         for (int i = 0; i < bytes_lidos; i++) {
-            if (buffer[i] == '\n') {
+            /* TODO: verificar '\n' e incrementar total_linhas */
+            if(buffer[i] == '\n') {
                 total_linhas++;
             }
         }
@@ -56,7 +57,6 @@ int main() {
          * TODO 3: Somar total de caracteres
          */
         /* TODO: total_caracteres += ... */;
-
         total_caracteres += bytes_lidos;
         
         if (total_reads % 10 == 0) {
